@@ -10,8 +10,8 @@
 
 #define VIEW_OFFSET         0  
 
-#define IMAGE_WIDTH (680)
-#define IMAGE_HEIGHT (480)
+#define IMAGE_WIDTH	 WGUI_LCD_WIDTH
+#define IMAGE_HEIGHT WGUI_LCD_HEIGHT
 
 #define VIEW_OFFSET         0  
 #define VIEW_SIZE           (IMAGE_WIDTH*IMAGE_HEIGHT*3) 

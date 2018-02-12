@@ -1,3 +1,4 @@
-﻿  core.c
+﻿  Main.c
+f:\wgui\sample\vs2015\lcdrefresh\lcdrefresh\lcdrefresh\main.c(11): warning C4028: formal parameter 3 different from declaration
   LcdRefresh.vcxproj -> F:\wGUI\Sample\vs2015\LcdRefresh\LcdRefresh\Debug\LcdRefresh.exe
   LcdRefresh.vcxproj -> F:\wGUI\Sample\vs2015\LcdRefresh\LcdRefresh\Debug\LcdRefresh.pdb (Full PDB)

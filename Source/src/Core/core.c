@@ -41,7 +41,10 @@ void WGUI_DrawRectangle(unsigned int sx, unsigned int sy, unsigned int ex, unsig
 		}
 	}
 }
-
+void WGUI_Clear(void)
+{
+	WGUI_DrawRectangle(0, 0, WGUI_LCD_WIDTH, WGUI_LCD_HEIGHT, gCoreColor, WGUI_IS_FILL);
+}
 
 void WGUI_SetColor(const WGUI_COLOR color)
 {
