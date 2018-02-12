@@ -28,9 +28,9 @@ static _FontDrawChar(unsigned int x, unsigned int y, WGUI_COLOR color, const cha
 			db_bit_mask = 1<<(7-(i-x)%8);
 			if(((gWGUI_Font.finfo[ch - 0x20].db[db_index])&(db_bit_mask)) == 0)
 			{
-				WGUI_DrawPoint(i,j,WGUI_COLOR_RED);
+				WGUI_DrawPoint(i,j,gCoreBkColor);
 			}else{
-				WGUI_DrawPoint(i,j,WGUI_COLOR_BLUE);
+				WGUI_DrawPoint(i,j,gCoreColor);
 			}
 			
 		}
@@ -39,6 +39,7 @@ static _FontDrawChar(unsigned int x, unsigned int y, WGUI_COLOR color, const cha
 	
 }
 
+//ÏÔÊ¾×Ö·û´®
 void WGUI_ShowTextAt(unsigned int x, unsigned int y, WGUI_COLOR color, const char *str)
 {
 	char * tmp_str = (char *)str;

@@ -1,4 +1,3 @@
-﻿  font.c
-f:\wgui\source\src\font\font.c(31): warning C4013: 'WGUI_DrawPoint' undefined; assuming extern returning int
+﻿  core.c
   LcdRefresh.vcxproj -> F:\wGUI\Sample\vs2015\LcdRefresh\LcdRefresh\Debug\LcdRefresh.exe
   LcdRefresh.vcxproj -> F:\wGUI\Sample\vs2015\LcdRefresh\LcdRefresh\Debug\LcdRefresh.pdb (Full PDB)

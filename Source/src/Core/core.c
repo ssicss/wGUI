@@ -1,6 +1,10 @@
 
 #include "core.h"
 
+WGUI_COLOR gCoreBkColor;
+WGUI_COLOR gCoreColor;
+
+
 void WGUI_DrawPoint(unsigned int x, unsigned int y, WGUI_COLOR color)
 {
 	WGUI_DriverDrawPoint(x, y, color);
@@ -39,7 +43,36 @@ void WGUI_DrawRectangle(unsigned int sx, unsigned int sy, unsigned int ex, unsig
 }
 
 
+void WGUI_SetColor(const WGUI_COLOR color)
+{
+	gCoreColor = color;
+}
+WGUI_COLOR WGUI_GetColor(void)
+{
+	return gCoreColor;
+}
+
+void WGUI_SetBkColor(const WGUI_COLOR color)
+{
+	gCoreBkColor = color;
+}
+WGUI_COLOR WGUI_GetBkColor(void)
+{
+	return gCoreBkColor;
+}
+
+
+
+
+
 WGUI_STATUS WGUI_Init(void)
 {
-	WGUI_DriverInit();
+	WGUI_STATUS res = WGUI_FALSE;
+	
+	res = WGUI_DriverInit();
+
+	gCoreBkColor = WGUI_DEFAULT_BKCOLOR;
+	gCoreColor   = WGUI_DEFAULT_COLOR;
+
+	return res;
 }
