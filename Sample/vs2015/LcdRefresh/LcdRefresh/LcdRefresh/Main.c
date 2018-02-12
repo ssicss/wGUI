@@ -32,7 +32,7 @@ int main(void)
 	WGUI_DrawRectangle(20,20,100,100,WGUI_COLOR_RED,WGUI_IS_FILL);
 	WGUI_DrawRectangle(120, 120, 300, 300, WGUI_COLOR_RED, WGUI_IS_NOT_FILL);
 
-	WGUI_ShowTextAt(50,120,WGUI_COLOR_RED,"aaa");
+	WGUI_ShowTextAt(50,120,WGUI_COLOR_RED,"abceWM@");
 	while (1);
 	
 }

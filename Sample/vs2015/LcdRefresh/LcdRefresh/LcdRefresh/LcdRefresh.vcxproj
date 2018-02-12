@@ -71,7 +71,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>F:\模拟器\wGUI\Source\inc;F:\模拟器\wGUI\Driver\inc;F:\模拟器\wGUI\Simulator;$(IncludePath)</IncludePath>
+    <IncludePath>F:\wGUI\Source\inc;F:\wGUI\Driver\inc;F:\wGUI\Simulator;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -154,12 +154,6 @@
     <ClCompile Include="..\..\..\..\..\Source\src\Font\font.c" />
     <ClCompile Include="..\..\..\..\..\Source\src\Font\font_0812.c" />
     <ClCompile Include="Main.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\Simulator\simulater.h" />
-    <ClInclude Include="..\..\..\..\..\Source\inc\core.h" />
-    <ClInclude Include="..\..\..\..\..\Source\inc\wgui.h" />
-    <ClInclude Include="..\..\..\..\..\Source\inc\wgui_config.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
